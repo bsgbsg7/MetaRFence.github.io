@@ -116,10 +116,10 @@ for k = 1:length(epcs_moving)
         Y2_list(:, end+1) = abs(Y2(1:L2 * fft_num / 2 + 1));
         
         subplot(6, 3, 1 * (k - 1) + floor((k - 1) / 3) * 6 + index);
-        plot(frequencies_moving*60, (abs(Y1(1:L1 * fft_num / 2 + 1)) * 2) / (fft_num * L1), 'red', 'DisplayName', 'mean\_phase\_moving');
+        plot(frequencies_moving, (abs(Y1(1:L1 * fft_num / 2 + 1)) * 2) / (fft_num * L1), 'red', 'DisplayName', 'mean\_phase\_moving');
 %         xlim([0,0.7]);
         hold on;
-        plot(frequencies_static*60, (abs(Y2(1:L2 * fft_num / 2 + 1)) * 2) / (fft_num * L2), '-black', 'DisplayName', 'mean\_phase\_static');
+        plot(frequencies_static, (abs(Y2(1:L2 * fft_num / 2 + 1)) * 2) / (fft_num * L2), '-black', 'DisplayName', 'mean\_phase\_static');
         xlabel('Breaths per minute');
 %         xlim([0,0.7]);
         ylabel('Spectrum amplitude');

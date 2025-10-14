@@ -196,46 +196,69 @@
 
 
 
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
 
-          <div class="item has-text-centered">
-            <img src="static/images/intro.jpg" alt="MetaRFence walking/breathing"
-              style="width: 85%; height: auto; display: inline-block;" />
+      <style>
+        .figure-block {
+          text-align: center;
+          margin: 3rem auto;
+          max-width: 900px;
+        }
+        .figure-block img {
+          width: 100%;
+          height: auto;
+          border-radius: 12px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .figure-block img:hover {
+          transform: scale(1.01);
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+        }
+        .figure-caption {
+          text-align: justify;
+          font-size: 1.1rem;
+          margin-top: 1.1rem;
+          line-height: 1.5;
+          color: #333;
+        }
+      </style>
 
-            <div style="width: 85%; margin: 1.1rem auto 0 auto; text-align: justify;">
-              <h2 class="subtitle" style="font-size: 1.2rem;">
-                MetaRFence can effectively obfuscate walking and breathing patterns in RFID signals for motion privacy
-                protection.
-              </h2>
-            </div>
-          </div>
-
-
-          <div class="item has-text-centered">
-            <img src="static/images/2.jpg" alt="Second Example" style="width: 100%; height: auto;" />
-            <h2 class="subtitle" style="text-align: justify; font-size: 1.2rem; margin-top: 1.1rem;">
-              Visualize and compare the eavesdropped signal and MetaRFence-affected signal in both temporal and spectral
-              domains: the strategy not only can effectively obfuscate the raw motion signal in both temporal and
-              spectral domains, but also can obfuscate the high-level signal features from different sensing algorithms.
-            </h2>
-          </div>
-
-          
-          <div class="item has-text-centered">
-            <img src="static/images/page.gif" alt="Second Example" style="width: 100%; height: auto;" />
-            <h2 class="subtitle" style="text-align: justify; font-size: 1.2rem; margin-top: 1.1rem;">
-              The reflection pattern of the metasurface changes with different unit on-off configurations, and the reflection gain peaks in the center.
-            </h2>
-          </div>
-
-        </div>
+      <div class="figure-block">
+        <img src="static/images/intro.jpg" alt="MetaRFence walking/breathing" />
+        <p class="figure-caption">
+          MetaRFence can effectively obfuscate walking and breathing patterns in RFID signals for motion privacy protection.
+        </p>
       </div>
-    </div>
-  </section>
 
+      <div class="figure-block">
+        <img src="static/images/2.jpg" alt="Signal Comparison" />
+        <p class="figure-caption">
+          Visualize and compare the eavesdropped signal and MetaRFence-affected signal in both temporal and spectral
+          domains: the strategy not only can effectively obfuscate the raw motion signal in both domains, but also
+          high-level signal features from different sensing algorithms.
+        </p>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/page.gif" alt="Metasurface Reflection Pattern" />
+        <p class="figure-caption">
+          The reflection pattern of the metasurface changes with different unit on-off configurations, and the reflection gain peaks in the center.
+        </p>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/hardware_deviations.jpg" alt="Hardware Deviations" />
+        <p class="figure-caption">
+          The hardware deviations of the metasurface unit dimensions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 
